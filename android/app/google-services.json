@@ -1,0 +1,126 @@
+{
+  "project_info": {
+    "project_number": "509485762295",
+    "project_id": "bevistoria",
+    "storage_bucket": "bevistoria.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:509485762295:android:e6579590c3e2ad151475f2",
+        "android_client_info": {
+          "package_name": "br.com.besoft.bevistoria"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "509485762295-226f321nb62h2gd0cjig9d1f33i6ufd8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.besoft.bevistoria",
+            "certificate_hash": "7e1cf54aace142834acf412ac45ac1007f94f649"
+          }
+        },
+        {
+          "client_id": "509485762295-mar7kflelqjlb08iuflb7i74qanaoosp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZjPwpq7uI3_WvO0f7d04fhgQjS5AwsQw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "509485762295-mar7kflelqjlb08iuflb7i74qanaoosp.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "509485762295-k0riqngdlimik6vag4scfc8kv1ad59f1.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "br.com.besoft.bevistoria"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:509485762295:android:37cc447ac0177d871475f2",
+        "android_client_info": {
+          "package_name": "br.com.besoft.genovavistoria"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "509485762295-mar7kflelqjlb08iuflb7i74qanaoosp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZjPwpq7uI3_WvO0f7d04fhgQjS5AwsQw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "509485762295-mar7kflelqjlb08iuflb7i74qanaoosp.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "509485762295-k0riqngdlimik6vag4scfc8kv1ad59f1.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "br.com.besoft.bevistoria"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:509485762295:android:f67953d13fe8074b1475f2",
+        "android_client_info": {
+          "package_name": "com.example.test_firebase_push"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "509485762295-mar7kflelqjlb08iuflb7i74qanaoosp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZjPwpq7uI3_WvO0f7d04fhgQjS5AwsQw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "509485762295-mar7kflelqjlb08iuflb7i74qanaoosp.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "509485762295-k0riqngdlimik6vag4scfc8kv1ad59f1.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "br.com.besoft.bevistoria"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

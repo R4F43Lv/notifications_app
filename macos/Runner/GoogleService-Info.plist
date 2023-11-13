@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>509485762295-226f321nb62h2gd0cjig9d1f33i6ufd8.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAn-DryEdDLFL68_c5VTfIk2E8OWTxqbRY</string>
+	<key>GCM_SENDER_ID</key>
+	<string>509485762295</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.testFirebasePush.RunnerTests</string>
+	<key>PROJECT_ID</key>
+	<string>bevistoria</string>
+	<key>STORAGE_BUCKET</key>
+	<string>bevistoria.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:509485762295:ios:42ce03d2db71d3bb1475f2</string>
+</dict>
+</plist>
