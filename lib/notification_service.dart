@@ -37,17 +37,17 @@ class NotificationService {
       const InitializationSettings(
         android: android,
       ),
-      onDidReceiveNotificationResponse: onDidReceiveNotificationResponse,
+      onDidReceiveNotificationResponse: onSelectNotification,
     );
   }
   
-  void onDidReceiveNotificationResponse(NotificationResponse notificationResponse) async {
+  void onSelectNotification(NotificationResponse notificationResponse) async {
     final String? payload = notificationResponse.payload;
     if (notificationResponse.payload != null) {
       debugPrint('notification payload: $payload');
     }
     Navigator.of(Routes.navigatorKey.currentContext!).pushReplacementNamed(payload!);
-}
+  }
 
   showNotification(CustomNotification notification){
     androidDetails = const AndroidNotificationDetails(
@@ -71,10 +71,10 @@ class NotificationService {
     );
   }
 
-  // checkNotifications() async {
-  //   final details = await localNotificationsPlugin.getNotificationAppLaunchDetails();
-  //   if(details != null && details.didNotificationLaunchApp){
-  //     _onSelectNotification(details.payload);
-  //   }
-  // }
+  checkForNotifications() async {
+    final details = await localNotificationsPlugin.getNotificationAppLaunchDetails();
+    if(details != null && details.didNotificationLaunchApp){
+      onSelectNotification(details.notificationResponse!);
+    }
+  }
 }

@@ -1,6 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:test_firebase_push/firebase_messaging_service.dart';
 import 'package:test_firebase_push/firebase_options.dart';
 import 'package:test_firebase_push/notification_service.dart';
 import 'package:test_firebase_push/routes.dart';
@@ -15,6 +16,7 @@ void main() async {
     MultiProvider(
       providers: [
         Provider<NotificationService>(create: (context) => NotificationService()),
+        Provider<FirebaseMessagingService>(create: (context) => FirebaseMessagingService(context.read<NotificationService>())),
       ],
       child: const MyApp(),
     ),
@@ -61,6 +63,22 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   @override
+  void initState() {
+    checkNotifications();
+    initializeFirebaseMessaging();
+    super.initState();
+  }
+
+  initializeFirebaseMessaging() async {
+    await Provider.of<FirebaseMessagingService>(context, listen: false).initialize();
+  }
+
+  checkNotifications() async {
+    // Verifica se o app foi aberto por uma notificação
+    await Provider.of<NotificationService>(context, listen: false).checkForNotifications();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
@@ -102,8 +120,8 @@ class _NotificacaoPageState extends State<NotificacaoPage> {
   Widget build(BuildContext context) {
     return const Scaffold(
       body: Center(
-      child: Text('data'),
-    ),
+        child: Text('data'),
+      ),
     );
   }
 }
